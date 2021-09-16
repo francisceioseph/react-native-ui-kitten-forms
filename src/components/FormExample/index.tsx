@@ -1,7 +1,6 @@
 import {Button, Input, Layout, Text} from '@ui-kitten/components';
 import React from 'react';
 import {StyleSheet} from 'react-native';
-import Page from '../Page';
 
 const FormExample = () => {
   //TODO: Add useForm hook
@@ -15,23 +14,19 @@ const FormExample = () => {
   //TODO: Add form validation
 
   return (
-    <Page>
-      <Layout style={styles.container} level="1">
-        <Layout level="3" style={styles.valueContainer}>
-          <Text category="h1">0</Text>
-        </Layout>
-
-        <Input style={styles.input} placeholder="Name" />
-
-        <Input style={styles.input} placeholder="Height (m)" />
-
-        <Input style={styles.input} placeholder="Weight (kg)" />
-
-        <Button appearance="outline" status="primary" style={styles.button}>
-          Calculate
-        </Button>
+    <Layout style={styles.container} level="1">
+      <Layout level="3" style={styles.valueContainer}>
+        <Text category="h1">0</Text>
       </Layout>
-    </Page>
+
+      <Input style={styles.input} placeholder="Name" />
+      <Input style={styles.input} placeholder="Height (m)" />
+      <Input style={styles.input} placeholder="Weight (kg)" />
+
+      <Button appearance="outline" status="primary" style={styles.button}>
+        Calculate
+      </Button>
+    </Layout>
   );
 };
 
